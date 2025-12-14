@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS bank_db;
+USE bank_db;
+
+CREATE TABLE IF NOT EXISTS accounts(
+    account_no BIGINT AUTO_INCREMENT PRIMARY KEY,
+    holder_name VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    balance DECIMAL(15,2) NOT NULL DEFAULT 0.0,
+    pin_hash CHAR(64) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
