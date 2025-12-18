@@ -1,5 +1,8 @@
 #pragma once
-#include <mysql/jdbc.h>
+#include <jdbc/mysql_driver.h>
+#include <jdbc/mysql_connection.h>
+#include <jdbc/cppconn/exception.h>
+#include <jdbc/cppconn/statement.h>
 #include<string>
 
 class Database {
